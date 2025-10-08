@@ -1,0 +1,53 @@
+{
+  "Laptops": [
+    {
+      "id": 1,
+      "brand": "Asus",
+      "model": "ROG Strix G15",
+      "color": "Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4070",
+        "vram": 12,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13700H",
+        "cores": 14,
+        "threads": 20,
+        "base_freq": 2.4,
+        "cache": "24MB"
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 32,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 16.0,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.3"
+      },
+      "images": [
+        "https://example.com/images/rog-g16-front.jpg",
+        "https://example.com/images/rog-g16-side.jpg"
+      ],
+      "description": "Потужний ігровий ноутбук з процесором Intel Core i7, відеокартою RTX 4060, 165Гц QHD-дисплеєм і високою автономністю.",
+      "price": 1200
+    }
+  ]
+}
