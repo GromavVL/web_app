@@ -1,13 +1,9 @@
 import React from "react";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
+import BasePage from "./component/BasePage";
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Footer/>
-    </>
+    <BasePage/>
   );
 }
 

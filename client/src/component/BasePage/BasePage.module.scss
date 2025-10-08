@@ -1,0 +1,20 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-content($justify: center, $align: center, 
+$direction: row,  $wrap: nowrap, $content: normal) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-content: $content;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
