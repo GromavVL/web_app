@@ -14,17 +14,25 @@ function Header() {
       <nav className={styles.navMenu}>
         <ul className={styles.ulList}>
           <li className={styles.liItem}>
-            <NavLink className={styles.navLinkElement} part="/">Home</NavLink>
+            <NavLink className={styles.navLinkElement} to="/">
+              Home
+            </NavLink>
           </li>
 
           <li className={styles.liItem}>
-            <NavLink className={styles.navLinkElement} part="/katalog">Каталог</NavLink>
+            <NavLink className={styles.navLinkElement} to="/catalog">
+              Каталог
+            </NavLink>
           </li>
           <li className={styles.liItem}>
-            <NavLink className={styles.navLinkElement} part="/wishlist">Cписок бажань</NavLink>
+            <NavLink className={styles.navLinkElement} to="/wishlist">
+              Cписок бажань
+            </NavLink>
           </li>
           <li className={styles.liItem}>
-            <NavLink className={styles.navLinkElement} part="/aboutus">Про нас</NavLink>
+            <NavLink className={styles.navLinkElement} to="/aboutus">
+              Про нас
+            </NavLink>
           </li>
         </ul>
       </nav>

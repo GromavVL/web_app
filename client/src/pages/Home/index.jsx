@@ -1,8 +1,11 @@
 import React from 'react';
+import LaptopSlider from '../../component/LaptopSlider'
+
 
 function Home() {
   return (
     <div>
+      <LaptopSlider/>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis
       neque ipsa aliquam molestiae cumque. Soluta quo nobis, vero, odio, non
       atque ut blanditiis commodi molestias amet eaque vitae! Doloribus. Lorem

@@ -1,0 +1,55 @@
+.errFoundWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8c0ff, #533ac4);
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.numOfErr {
+  font-size: 150px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 3s ease-in-out infinite;
+}
+
+.homeBtn {
+    padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f2b96;
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #f3f3f3;
+  }
+}
+
+.textOfErr {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

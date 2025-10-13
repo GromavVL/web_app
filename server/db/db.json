@@ -1,4 +1,5 @@
 {
+  
   "Laptops": [
     {
       "id": 1,
@@ -12,6 +13,7 @@
         "vram": 12,
         "vram_type": "GDDR6"
       },
+
       "cpu": {
         "brand": "Intel",
         "model": "Core i7-13700H",

@@ -4,7 +4,8 @@
   @extend .container;
   @include flex-content(space-between, center);
   min-width: 100%;
-  background-color: rgb(19, 45, 61);
+  background-color: #1a2a3a;
+  padding: 10px;
 }
 
 .headerWrapperLogo {
@@ -20,7 +21,7 @@
 .ulList {
   @include flex-content(flex-start, center);
   gap: 24px;
-  margin-left: 24px ;
+  margin-left: 24px;
 }
 
 .searchInput {
