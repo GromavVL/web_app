@@ -1,4 +1,6 @@
-// .mainHome {}
+.mainHome {
+  background-color: whitesmoke;
+}
 
 .sectionCart {
   display: grid;
@@ -10,6 +12,7 @@
 
 .elPrice {
   color: greenyellow;
+  padding: 10px;
 }
 
 .cartInfo {
@@ -23,15 +26,18 @@
   width: 100%;
   max-width: 220px;
   background-color: #1a2a3a;
-  padding: 15px;
-  border-radius: 8px;
+  // padding: 15px;
+  border-radius: 5px;
   color: white;
   transition: transform 0.3s ease;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .imgLaptop {
   width: 100%;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .sortSelect {

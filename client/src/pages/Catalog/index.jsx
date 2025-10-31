@@ -1,8 +1,29 @@
 import React from 'react';
-import Asus from '../../assets/LaptopsImg/Asus/ASUSTUFGamingA14.png';
+import { useEffect, useState } from 'react';
 import styles from './Catalog.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 function Catalog() {
+  const navigate = useNavigate();
+  const [laptopProducts, setLaptopProducts] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:5000/Laptops')
+      .then((res) => res.json())
+      .then((data) => {
+        const formattedData = data.map((item) => ({
+          id: item.id,
+          brand: item.brand,
+          model: item.model,
+          price: item.price,
+          images: item.images[0],
+        }));
+        setLaptopProducts(formattedData);
+      })
+      .catch((err) => console.log('err >> ', err));
+  }, []);
+  const handleProductClick = (id) => {
+    navigate(`/catalog/${id}`);
+  };
   return (
     <main className={styles.mainHome}>
       <select className={styles.sortSelect}>
@@ -12,102 +33,28 @@ function Catalog() {
         <option>Новинки</option>
       </select>
       <section className={styles.sectionCart}>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
-        <article className={styles.cartLaptop}>
-          <img className={styles.imgLaptop} src={Asus} alt="asus" />
-          <div className={styles.cartInfo}>
-            <p>Asus</p>
-            <p>TUF Gaming F15</p>
-          </div>
-          <p className={styles.elPrice}>1200 $</p>
-        </article>
+        {laptopProducts.length === 0 ? (
+          <p>Завантаження</p>
+        ) : (
+          laptopProducts.map((product) => (
+            <article
+              className={styles.cartLaptop}
+              key={product.id}
+              onClick={() => handleProductClick(product.id)}
+            >
+              <img
+                className={styles.imgLaptop}
+                src={product.images}
+                alt={product.model}
+              />
+              <div className={styles.cartInfo}>
+                <p>{product.brand}</p>
+                <p>{product.model}</p>
+              </div>
+              <p className={styles.elPrice}>{product.price} $</p>
+            </article>
+          ))
+        )}
       </section>
     </main>
   );

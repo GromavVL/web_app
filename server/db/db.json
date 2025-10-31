@@ -16,9 +16,7 @@
         "brand": "Intel",
         "model": "Core i7-13700H",
         "cores": 14,
-        "threads": 20,
-        "base_freq": 2.4,
-        "cache": "24MB"
+        "threads": 20
       },
       "ram": {
         "type": "DDR5",
@@ -43,8 +41,11 @@
         "bluetooth": "5.3"
       },
       "images": [
-        "https://example.com/images/rog-g16-front.jpg",
-        "https://example.com/images/rog-g16-side.jpg"
+        "https://content.rozetka.com.ua/goods/images/big/587937877.jpg",
+        "https://content.rozetka.com.ua/goods/images/big/587937878.jpg",
+        "https://content2.rozetka.com.ua/goods/images/big/587937879.jpg",
+        "https://content.rozetka.com.ua/goods/images/big/587937880.jpg",
+        "https://content.rozetka.com.ua/goods/images/big/587937881.jpg"
       ],
       "description": "Потужний ігровий ноутбук з процесором Intel Core i7, відеокартою RTX 4060, 165Гц QHD-дисплеєм і високою автономністю.",
       "price": 1200
