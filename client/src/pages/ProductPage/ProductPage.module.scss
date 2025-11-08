@@ -1,0 +1,101 @@
+$bg-light: azure;
+$shadow-light: 0 4px 15px #0000000d;
+$radius: 8px;
+
+%card {
+  background-color: $bg-light;
+  border-radius: $radius;
+  box-shadow: $shadow-light;
+  margin: 8px;
+}
+
+.productPageHome {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+
+  .productTitle {
+    @extend %card;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    .productName {
+      margin-left: 100px;
+    }
+  }
+
+  .sectionLaptop {
+    display: flex;
+    .infoComtainer {
+      @extend %card;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      padding: 15px;
+      position: relative;
+      width: 100%;
+      .laptopIMg {
+        max-width: 450px;
+      }
+    }
+
+    .navBtn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      font-size: 24px;
+      opacity: 50%;
+      cursor: pointer;
+    }
+
+    .prevSlide {
+      left: 15px;
+    }
+
+    .nextSlide {
+      right: 15px;
+    }
+    .laptopCharacteristic {
+      @extend %card;
+      width: 100%;
+      padding: 10px;
+
+      .charakterTitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .infoEl {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #e3e4ec;
+      }
+
+      .productEl,
+      .textEl {
+        font-weight: 600;
+      }
+    }
+  }
+  .descriptionEl {
+    background-color: $bg-light;
+    padding: 15px;
+    margin: 10px;
+    border-radius: $radius;
+
+    .titleEl {
+        font-weight: 600;
+        padding: 10px 0;
+    }
+    .titleText {
+        padding: 10px 0;
+    }  
+}
+}
