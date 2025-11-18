@@ -1,10 +1,11 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import styles from './Catalog.module.scss';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useWishlist } from '../../context/WishlistContext';
+import styles from './Catalog.module.scss';
 
 function Catalog() {
   const navigate = useNavigate();
+  const { toggleWishlist, isInWishlist } = useWishlist();
   const [laptopProducts, setLaptopProducts] = useState([]);
   useEffect(() => {
     fetch('http://localhost:5000/Laptops')
@@ -34,24 +35,35 @@ function Catalog() {
       </select>
       <section className={styles.sectionCart}>
         {laptopProducts.length === 0 ? (
-          <p>Завантаження</p>
+          <div className={styles.loadingContainer}>
+            <div className={styles.loader}></div>
+            <p className={styles.loadingText}>Завантаження товарів...</p>
+          </div>
         ) : (
           laptopProducts.map((product) => (
-            <article
-              className={styles.cartLaptop}
-              key={product.id}
-              onClick={() => handleProductClick(product.id)}
-            >
-              <img
-                className={styles.imgLaptop}
-                src={product.images}
-                alt={product.model}
-              />
-              <div className={styles.cartInfo}>
-                <p>{product.brand}</p>
-                <p>{product.model}</p>
+            <article className={styles.cartLaptop} key={product.id}>
+              <button
+                className={`${styles.heartBtn} ${isInWishlist(product.id) ? styles.heartActive : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleWishlist(product.id);
+                }}
+                aria-label="Додати до списку бажань"
+              >
+                ♥
+              </button>
+              <div onClick={() => handleProductClick(product.id)}>
+                <img
+                  className={styles.imgLaptop}
+                  src={product.images}
+                  alt={product.model}
+                />
+                <div className={styles.cartInfo}>
+                  <p>{product.brand}</p>
+                  <p>{product.model}</p>
+                </div>
+                <p className={styles.elPrice}>{product.price} $</p>
               </div>
-              <p className={styles.elPrice}>{product.price} $</p>
             </article>
           ))
         )}

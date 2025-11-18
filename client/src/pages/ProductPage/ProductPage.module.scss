@@ -40,6 +40,17 @@ $radius: 8px;
       .laptopIMg {
         max-width: 450px;
       }
+      .noImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 300px;
+        background-color: #f0f0f0;
+        color: #666;
+        font-size: 18px;
+        border-radius: 8px;
+      }
     }
 
     .navBtn {
@@ -64,11 +75,42 @@ $radius: 8px;
       width: 100%;
       padding: 10px;
 
+      .headerSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 15px;
+      }
+
       .charakterTitle {
         font-size: 24px;
         font-weight: 700;
         margin: 10px;
-        text-align: center;
+      }
+
+      .wishlistBtn {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #f0f0f0;
+        color: #666;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: #e0e0e0;
+          transform: translateY(-2px);
+        }
+
+        &.wishlistActive {
+          background-color: #ffe0e0;
+          color: #ff0000;
+          border-color: #ff0000;
+        }
       }
 
       .infoEl {

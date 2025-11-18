@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './Header.module.scss';
 import { IoSearchOutline } from 'react-icons/io5';
 import { NavLink } from 'react-router';
+import { useWishlist } from '../../../context/WishlistContext';
 
 function Header() {
+  const { wishlist } = useWishlist();
+
   return (
     <header className={styles.headerWrapper}>
       <img
@@ -27,6 +30,9 @@ function Header() {
           <li className={styles.liItem}>
             <NavLink className={styles.navLinkElement} to="/wishlist">
               Cписок бажань
+              {wishlist.length > 0 && (
+                <span className={styles.wishlistBadge}>{wishlist.length}</span>
+              )}
             </NavLink>
           </li>
           <li className={styles.liItem}>
