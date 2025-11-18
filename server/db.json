@@ -29,7 +29,7 @@
         "interface": "PCIe 4.0"
       },
       "display": {
-        "size": 16.0,
+        "size": 16,
         "resolution": "2560x1600",
         "matrix_type": "IPS",
         "refresh_rate": 165
@@ -129,7 +129,7 @@
         "interface": "PCIe 4.0"
       },
       "display": {
-        "size": 16.0,
+        "size": 16,
         "resolution": "2560x1600",
         "matrix_type": "IPS",
         "refresh_rate": 165
@@ -191,7 +191,7 @@
         "bluetooth": "5.2"
       },
       "images": [
-        "https://static.gigabyte.com/StaticFile/Image/Global/56cd9710908787aec66c4f9be420e2aa/Product/29894/webp/2000",
+        "https://content.rozetka.com.ua/goods/images/big/589953263.jpg",
         "https://static.gigabyte.com/StaticFile/Image/Global/b80409615c44a2d8aa0f77321884e694/Product/28107/webp/2000",
         "https://static.gigabyte.com/StaticFile/Image/Global/b80409615c44a2d8aa0f77321884e694/Product/28107/webp/2000",
         "https://static.gigabyte.com/StaticFile/Image/Global/4dfbaec6fdbf173a28e1702ee24c0894/Product/28108/webp/2000",
@@ -242,6 +242,666 @@
       },
       "images": [],
       "description": "Ноутбук із надзвичайно швидким дисплеєм, озброєний новітньою графічною картою NVIDIA® GeForce RTX™ серії 301, процесором Intel® Core™ 11го покоління1 та нашою спеціально розробленою технологією 3D-вентилятора AeroBlade™ 5го покоління, перенесе вас в епіцентр ігрових подій з усім потрібним, щоб знищити опонентів.",
+      "price": 950
+    },
+    {
+      "id": 6,
+      "brand": "Asus",
+      "model": "ROG Zephyrus G14",
+      "color": "Moonlight White",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4060",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "AMD",
+        "model": "Ryzen 9 7940HS",
+        "cores": 8,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 14,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 2,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "Компактний та потужний ROG Zephyrus G14 поєднує високу продуктивність з портативністю. Оснащений новітнім процесором AMD Ryzen 9 та графікою RTX 40 серії, цей ноутбук ідеально підходить для ігор та творчості у дорозі.",
+      "price": 1250
+    },
+    {
+      "id": 7,
+      "brand": "MSI",
+      "model": "Raider GE78",
+      "color": "Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4080",
+        "vram": 12,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i9-14900HX",
+        "cores": 24,
+        "threads": 32
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 32,
+        "freq": 5600
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "2TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 17.3,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 240
+      },
+      "ports": {
+        "usb": 4,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "Флагманський ігровий ноутбук MSI Raider GE78 з найпотужнішими компонентами для екстремальної продуктивності. RGB-підсвічування Mystic Light, дисплей 240 Гц та система охолодження Cooler Boost 5 забезпечують незабутній ігровий досвід.",
+      "price": 2800
+    },
+    {
+      "id": 8,
+      "brand": "Lenovo",
+      "model": "Legion Pro 7i",
+      "color": "Storm Grey",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4070",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i9-13900HX",
+        "cores": 24,
+        "threads": 32
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 32,
+        "freq": 5600
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 16,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 240
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Legion Pro 7i - це професійний ігровий ноутбук преміум-класу з технологією Lenovo AI Engine+ для динамічної оптимізації продуктивності. Вражаючий дисплей 240 Гц та потужна система охолодження Legion Coldfront 5.0 гарантують максимальну віддачу.",
+      "price": 2200
+    },
+    {
+      "id": 9,
+      "brand": "HP",
+      "model": "Omen 16",
+      "color": "Shadow Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4050",
+        "vram": 6,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13700HX",
+        "cores": 16,
+        "threads": 24
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 16.1,
+        "resolution": "1920x1080",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "HP Omen 16 - ігровий ноутбук для тих, хто шукає оптимальне співвідношення ціни та якості. Потужний процесор Intel 13-го покоління та RTX 4050 забезпечують високу продуктивність у сучасних іграх. Система охолодження OMEN Tempest підтримує стабільну роботу.",
+      "price": 900
+    },
+    {
+      "id": 10,
+      "brand": "Dell",
+      "model": "Alienware m18",
+      "color": "Dark Metallic Moon",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4090",
+        "vram": 16,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i9-14900HX",
+        "cores": 24,
+        "threads": 32
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 64,
+        "freq": 5600
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "4TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 18,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 4,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "Топовий ігровий монстр Alienware m18 з максимальною конфігурацією для найвибагливіших геймерів та творців контенту. 18-дюймовий дисплей, RTX 4090 та система охолодження Cryo-tech забезпечують неперевершену продуктивність у будь-яких завданнях.",
+      "price": 4500
+    },
+    {
+      "id": 11,
+      "brand": "Razer",
+      "model": "Blade 15",
+      "color": "Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4070",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13800H",
+        "cores": 14,
+        "threads": 20
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "2560x1440",
+        "matrix_type": "IPS",
+        "refresh_rate": 240
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "Razer Blade 15 - це еталон стилю та продуктивності в компактному алюмінієвому корпусі. Преміальна якість збірки, RGB-клавіатура Chroma та потужні компоненти роблять його ідеальним вибором для професіоналів та ентузіастів.",
+      "price": 2400
+    },
+    {
+      "id": 12,
+      "brand": "Gigabyte",
+      "model": "Aorus 17X",
+      "color": "Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4080",
+        "vram": 12,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i9-13900HX",
+        "cores": 24,
+        "threads": 32
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 32,
+        "freq": 5600
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "2TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 17.3,
+        "resolution": "2560x1440",
+        "matrix_type": "IPS",
+        "refresh_rate": 240
+      },
+      "ports": {
+        "usb": 4,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Gigabyte Aorus 17X - флагманський ігровий ноутбук з максимальною продуктивністю. Унікальна система охолодження WINDFORCE Infinity забезпечує ефективне розсіювання тепла, а механічна клавіатура з перемикачами OMRON гарантує відмінний відгук.",
+      "price": 2900
+    },
+    {
+      "id": 13,
+      "brand": "Asus",
+      "model": "TUF Gaming A15",
+      "color": "Graphite Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4060",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "AMD",
+        "model": "Ryzen 7 7735HS",
+        "cores": 8,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "1920x1080",
+        "matrix_type": "IPS",
+        "refresh_rate": 144
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Asus TUF Gaming A15 - надійний ігровий ноутбук з військовим стандартом міцності MIL-STD-810H. Пройшов випробування на стійкість до ударів, вібрацій та екстремальних температур. Ідеальний вибір для тих, хто цінує надійність та довговічність.",
+      "price": 1000
+    },
+    {
+      "id": 14,
+      "brand": "MSI",
+      "model": "Cyborg 15",
+      "color": "Translucent Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4050",
+        "vram": 6,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13620H",
+        "cores": 10,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "1920x1080",
+        "matrix_type": "IPS",
+        "refresh_rate": 144
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "MSI Cyborg 15 - стильний ігровий ноутбук з унікальним напівпрозорим дизайном. Поєднує доступну ціну з сучасними компонентами. Ідеально підходить для початківців геймерів та студентів, які потребують продуктивного пристрою.",
+      "price": 850
+    },
+    {
+      "id": 15,
+      "brand": "Lenovo",
+      "model": "Legion Slim 5",
+      "color": "Storm Grey",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4060",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "AMD",
+        "model": "Ryzen 7 7840HS",
+        "cores": 8,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 5200
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 16,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 6E",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Legion Slim 5 - тонкий та легкий ігровий ноутбук для тих, хто цінує портативність без компромісів у продуктивності. Завтовшки лише 20 мм, він легко поміститься у рюкзак, забезпечуючи високу ігрову продуктивність у дорозі.",
+      "price": 1100
+    },
+    {
+      "id": 16,
+      "brand": "HP",
+      "model": "Victus 15",
+      "color": "Performance Blue",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4050",
+        "vram": 6,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i5-13500H",
+        "cores": 12,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR4",
+        "capacity": 16,
+        "freq": 3200
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "1920x1080",
+        "matrix_type": "IPS",
+        "refresh_rate": 144
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "HP Victus 15 - доступний ігровий ноутбук для широкої аудиторії. Оптимізоване співвідношення ціна-якість робить його відмінним вибором для початківців геймерів та студентів. Стильний дизайн та достатня продуктивність для більшості сучасних ігор.",
+      "price": 750
+    },
+    {
+      "id": 17,
+      "brand": "Dell",
+      "model": "G15 5530",
+      "color": "Dark Shadow Grey",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4060",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13650HX",
+        "cores": 14,
+        "threads": 20
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "2560x1440",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Dell G15 5530 - збалансований ігровий ноутбук з якісною збіркою від Dell. Покращена система охолодження Game Shift підтримує високу продуктивність під час тривалих ігрових сесій. QHD-дисплей 165 Гц забезпечує чітке та плавне зображення.",
+      "price": 1150
+    },
+    {
+      "id": 18,
+      "brand": "Acer",
+      "model": "Nitro 16",
+      "color": "Obsidian Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4070",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "AMD",
+        "model": "Ryzen 7 7840HS",
+        "cores": 8,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "1TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 16,
+        "resolution": "2560x1600",
+        "matrix_type": "IPS",
+        "refresh_rate": 165
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "Acer Nitro 16 - потужний ігровий ноутбук середнього класу з великим 16-дюймовим дисплеєм у форматі 16:10. Комбінація AMD Ryzen 7 та RTX 4070 забезпечує відмінну продуктивність у сучасних AAA-іграх та професійних додатках.",
+      "price": 1400
+    },
+    {
+      "id": 19,
+      "brand": "Asus",
+      "model": "ROG Strix SCAR 18",
+      "color": "Off Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4090",
+        "vram": 16,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i9-14900HX",
+        "cores": 24,
+        "threads": 32
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 64,
+        "freq": 5600
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "2TB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 18,
+        "resolution": "2560x1600",
+        "matrix_type": "Mini LED",
+        "refresh_rate": 240
+      },
+      "ports": {
+        "usb": 4,
+        "usb_c": 2,
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "5.3"
+      },
+      "images": [],
+      "description": "ROG Strix SCAR 18 - найпотужніший ігровий ноутбук для професійних кіберспортсменів. Mini LED дисплей 240 Гц, RTX 4090 та система охолодження з рідким металом забезпечують абсолютний максимум продуктивності для змагань найвищого рівня.",
+      "price": 4800
+    },
+    {
+      "id": 20,
+      "brand": "MSI",
+      "model": "Katana 15",
+      "color": "Black",
+      "os": "Windows 11",
+      "gpu": {
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 4060",
+        "vram": 8,
+        "vram_type": "GDDR6"
+      },
+      "cpu": {
+        "brand": "Intel",
+        "model": "Core i7-13620H",
+        "cores": 10,
+        "threads": 16
+      },
+      "ram": {
+        "type": "DDR5",
+        "capacity": 16,
+        "freq": 4800
+      },
+      "storage": {
+        "type": "NVMe SSD",
+        "capacity": "512GB",
+        "interface": "PCIe 4.0"
+      },
+      "display": {
+        "size": 15.6,
+        "resolution": "1920x1080",
+        "matrix_type": "IPS",
+        "refresh_rate": 144
+      },
+      "ports": {
+        "usb": 3,
+        "usb_c": 1,
+        "wifi": "Wi-Fi 6",
+        "bluetooth": "5.2"
+      },
+      "images": [],
+      "description": "MSI Katana 15 - доступний ігровий ноутбук у стилі самурайського меча. Поєднує сучасні компоненти з привабливою ціною. RTX 4060 впорається з більшістю сучасних ігор у Full HD при високих налаштуваннях графіки.",
       "price": 950
     }
   ]

@@ -35,11 +35,6 @@ function Header() {
               )}
             </NavLink>
           </li>
-          <li className={styles.liItem}>
-            <NavLink className={styles.navLinkElement} to="/aboutus">
-              Про нас
-            </NavLink>
-          </li>
         </ul>
       </nav>
       <div className={styles.searchBar}>
