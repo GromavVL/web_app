@@ -24,17 +24,22 @@
   margin-left: 24px;
 }
 
+.searchWrapper {
+  position: relative;
+  margin-right: 24px;
+}
+
 .searchInput {
   padding: 10px;
   border-radius: 1px;
   border: none;
   outline: none;
+  width: 200px;
 }
 
 .searchBar {
   border: 3px solid rgb(49, 120, 228);
   border-radius: 8px;
-  margin-right: 24px;
 }
 
 .searchButton {
@@ -43,6 +48,77 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+.searchDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid rgb(49, 120, 228);
+  border-radius: 8px;
+  margin-top: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.searchResultItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.searchResultImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.searchResultInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.searchResultBrand {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.searchResultModel {
+  font-size: 13px;
+  color: #666;
+}
+
+.searchResultPrice {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(49, 120, 228);
+}
+
+.searchNoResults {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
 
 .navLinkElement {

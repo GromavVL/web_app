@@ -7,6 +7,8 @@ function Catalog() {
   const navigate = useNavigate();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [laptopProducts, setLaptopProducts] = useState([]);
+  const [sortOption, setSortOption] = useState('default');
+
   useEffect(() => {
     fetch('http://localhost:5000/Laptops')
       .then((res) => res.json())
@@ -22,16 +24,37 @@ function Catalog() {
       })
       .catch((err) => console.log('err >> ', err));
   }, []);
+
   const handleProductClick = (id) => {
     navigate(`/catalog/${id}`);
   };
+
+  const handleSortChange = (e) => {
+    setSortOption(e.target.value);
+  };
+
+  const getSortedProducts = () => {
+    const sorted = [...laptopProducts];
+
+    switch (sortOption) {
+      case 'price-asc':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'price-desc':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'default':
+      default:
+        return sorted;
+    }
+  };
+
+  const sortedProducts = getSortedProducts();
+
   return (
     <main className={styles.mainHome}>
-      <select className={styles.sortSelect}>
-        <option>Від дешевих до дорогих</option>
-        <option>Від дорогих до дешевих</option>
-        <option>За рейтингом</option>
-        <option>Новинки</option>
+      <select className={styles.sortSelect} value={sortOption} onChange={handleSortChange}>
+        <option value="default">За замовчуванням</option>
+        <option value="price-asc">Від дешевих до дорогих</option>
+        <option value="price-desc">Від дорогих до дешевих</option>
       </select>
       <section className={styles.sectionCart}>
         {laptopProducts.length === 0 ? (
@@ -40,7 +63,7 @@ function Catalog() {
             <p className={styles.loadingText}>Завантаження товарів...</p>
           </div>
         ) : (
-          laptopProducts.map((product) => (
+          sortedProducts.map((product) => (
             <article className={styles.cartLaptop} key={product.id}>
               <button
                 className={`${styles.heartBtn} ${isInWishlist(product.id) ? styles.heartActive : ''}`}
